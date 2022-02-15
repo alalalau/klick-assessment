@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
+import { CustomerForm } from './components/CustomerForm';
+import { Table } from './components/Table';
 import './App.css';
 
 function App() {
+  const [users, setUsers] = useState([]);
+  useEffect(() => {
+    document.title = "Klick App"
+  }, [])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CustomerForm users={users} setUsers={setUsers} />
+      <Table users={users} setUsers={setUsers} />
     </div>
   );
 }
