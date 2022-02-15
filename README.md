@@ -1,3 +1,18 @@
+# Klick Technical Assessment 2022
+
+Please clone the source code then run
+
+- **npm install**
+- **npm start**
+
+ # Features
+ - create a customer with details
+ - unique email for each customer
+ - update existing customer with details
+ - update table based on new data
+ - sort data by ascending, descending or none
+ - data only survives for the session
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
